@@ -96,7 +96,7 @@ public abstract class AbstractTestSocketIO implements IOCallback {
 		args = new LinkedBlockingQueue<Object>();
 		System.out.println("Connect with " + transport);
 		node = Runtime.getRuntime().exec(
-				new String[] { NODE, "./tests/io/socket/testutils/socketio.js",
+				new String[] { NODE, "./src/test/resources/socketio.js",
 						"" + getPort(), transport });
 		proxy = new MutateProxy(getPort() + 1, getPort());
 		proxy.start();

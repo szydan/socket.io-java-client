@@ -13,10 +13,11 @@ io.set('transports', [ process.argv[3] ]);
 
 var main = io.of("/main").on('connection', function(socket) {
 	socket.on('echo', function(data) {
-		if(data)
+		if(data){
 			socket.emit('echo', data);
-		else
+		}else{
 			socket.emit('echo');
+		}
 	});
 	socket.on('echoSend', function(data) {
 		if (typeof data == 'object') {

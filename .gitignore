@@ -1,2 +1,8 @@
 bin/
 jar/
+
+/.classpath
+/.project
+/.settings/org.eclipse.core.resources.prefs
+/target/
+/node_modules/

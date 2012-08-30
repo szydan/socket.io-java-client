@@ -6,5 +6,5 @@ import org.junit.runners.Suite.SuiteClasses;
 
 @RunWith(Suite.class)
 @SuiteClasses({ WebsocketTestSocketIO.class, XHRTestSocketIO.class })
-public class AllTests {
+public class AllTest {
 }

@@ -30,11 +30,14 @@ Checkout and compile the project:
 ``` bash
 git clone git://github.com/Gottox/socket.io-java-client.git
 cd socket.io-java-client
-ant jar
-mv jar/socketio.jar /path/to/your/libs/project
-```
 
-If you're using ant, change your build.xml to include socketio.jar. If you're eclipse, add the jar to your project buildpath.
+mvn clean compile
+
+if you using eclipse
+
+mvn eclipse:eclipse
+
+```
 
 Afterwards, you'll be able to use this library: 
 
@@ -104,11 +107,9 @@ Both repositories are synchronized and up to date.
 
 to build a jar-file:
 
-	cd $PATH_TO_SOCKETIO_JAVA
-	ant jar
-	ls jar/socketio.jar
-
-You'll find the socket.io-jar in jar/socketio.jar 
+	mvn install
+	
+you will find the jar file in target folder	
 
 ## Bugs
 
@@ -126,13 +127,9 @@ This Library was designed with portability in mind.
 
 ## Testing
 
-There comes a JUnit test suite with socket.io-java-client. Currently it's tested with Eclipse.
+to run tests 
+	mvn test
 
-You need node installed in PATH.
-
- * open the project with eclipse
- * open tests/io.socket/AllTests.java
- * run it as JUnit4 test.
 
 ## TODO
 
